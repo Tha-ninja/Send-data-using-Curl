@@ -20,6 +20,7 @@ try{
     $sql = "SELECT * FROM tablename";
         $query = $db->prepare($sql);
         $query->execute();
+//fetch all data and encode it
         $results = $query->fetchAll(PDO::FETCH_ASSOC);
         $json = json_encode($results);
                     
